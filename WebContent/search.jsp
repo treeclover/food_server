@@ -25,7 +25,7 @@
 		String search = request.getParameter("search");
 		String query = query1 + search + query2;
 		String query0 = query3 + search + query4;
-
+		
 		rs1 = stmt.executeQuery(query);
 		try{
 			while (rs1.next()){
