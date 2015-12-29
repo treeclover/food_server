@@ -29,9 +29,9 @@
 		}
 		out.print(array);
 	} catch (SQLException e) {
-		out.println("작성된 방명록이 존재하지 않습니다.");
+		out.println("작성된 데이터가 존재하지 않습니다.");
 	} catch (IOException e) {
-		out.println("작성된 방명록이 존재하지 않습니다.");
+		out.println("작성된 데이터가 존재하지 않습니다.");
 	} finally {
 		try {
 			stmt.close();
