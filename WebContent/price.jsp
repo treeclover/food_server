@@ -14,7 +14,7 @@
 		if (conn == null)
 			throw new Exception("데이터베이스에 연결할 수 없습니다.<BR>");
 		stmt = conn.createStatement();
-		ResultSet rs = stmt.executeQuery("select name, price, restaurant, total, img from food order by price_ev desc limit 10;");
+		ResultSet rs = stmt.executeQuery("select name, price, restaurant, price_ev, img from food order by price_ev desc limit 10;");
 		while (rs.next()) {
 			messages = new JSONObject();
 			messages.put("name", rs.getString("name"));
