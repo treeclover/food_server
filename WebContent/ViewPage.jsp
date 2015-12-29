@@ -55,11 +55,7 @@
 %>
 		<FORM action="ViewPage.jsp" method=POST>
 			<input type=submit name=page value=1>
-		</FORM>
-		<FORM action="ViewPage.jsp" method=POST>
 			<input type=submit name=page value=2>
-		</FORM>
-		<FORM action="ViewPage.jsp" method=POST>
 			<input type=submit name=page value=3>
 		</FORM>
 	</BODY>
