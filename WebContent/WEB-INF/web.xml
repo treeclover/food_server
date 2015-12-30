@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+	<servlet>
+		<servlet-name>high_score</servlet-name>
+		<servlet-class>highscore</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>high_score</servlet-name>
+		<url-pattern>/highscore</url-pattern>
+	</servlet-mapping>
+    <servlet>
+        <servlet-name>auto-create-db-pool-jsp</servlet-name>
+        <jsp-file>/AutoCreateDBPool.jsp</jsp-file>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+</web-app>
