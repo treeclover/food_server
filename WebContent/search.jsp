@@ -30,16 +30,11 @@
 		try{
 			while (rs1.next()){
 				String name = rs1.getString("name");
-				int price = rs1.getInt("price");
 				String restaurant = rs1.getString("restaurant");
-				float price_ev = rs1.getFloat("price_ev");
-				String img = rs1.getString("img");
-			
+
 				searchObj = new JSONObject();
 				searchObj.put("name", name);
-				searchObj.put("price", price);
-				searchObj.put("price_ev", price_ev);
-				searchObj.put("imgpath", img);
+				searchObj.put("restaurant", restaurant);
 				if(searchObj != null)
 					arr.add(searchObj);
 			}
@@ -50,16 +45,11 @@
 		try{
 			while (rs2.next()){
 				String name = rs2.getString("name");
-				int price = rs2.getInt("price");
 				String restaurant = rs2.getString("restaurant");
-				float price_ev = rs2.getFloat("price_ev");
-				String img = rs2.getString("img");
-			
+
 				searchObj = new JSONObject();
 				searchObj.put("name", name);
-				searchObj.put("price", price);
-				searchObj.put("price_ev", price_ev);
-				searchObj.put("imgpath", img);
+				searchObj.put("restaurant", restaurant);
 				if(searchObj != null)
 					arr.add(searchObj);
 			}
